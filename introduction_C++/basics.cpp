@@ -41,8 +41,53 @@ void cppInputTime() {
     std::cin >> minutes;
     
     std::cout << hour << " : " << minutes;
-        
 }
+void cppIfStatement() {
+
+    int score = 0;
+    int result;
+    std::cout << "What is the result of 5+5 ?" << std::endl;
+
+    std::cin >> result;
+
+    if(result == 10) {
+        std::cout << "Congratulations you have the good score" << std::endl;
+        score++;
+    } else {
+        std::cout << "Oh... you got the wrong answer" << std::endl;
+    }
+    std::cout << "Your scored : " << score << " points";
+}
+void cppThePriceIsRight() {
+    int price = 22;
+    int myguess;
+    std::cout << "GUESS THE PRICE: " << std::endl;
+    std::cin >> myguess;
+    if(myguess > price) {
+        std::cout << "The price is too high ";
+    } else if(price > myguess) {
+        std::cout << "The price is too low";
+    } else {
+        std::cout << "You got the exact price";
+    }
+
+
+}
+
+void cppNoReturnFunction() {
+    
+    std::cout << "Void datatype doesn't return value, only " << std::endl;
+}
+
+int cppSquareArea(int side) { // <-- data type defined in parameter no need to rewrite 
+    int result = side * side;
+    return result;
+}
+
+// bool cppIsEven(int number) {
+//     if(number )
+// }
+
 int main() {
 
     // cppIntro();
@@ -50,6 +95,11 @@ int main() {
     // cppVariableTypes();
     
     //  cppInputTime();
+
+    // cppIfStatement();
+
+    cppThePriceIsRight();
+
     return 0;
 
 }
