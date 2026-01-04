@@ -61,14 +61,18 @@ void cppIfStatement() {
 void cppThePriceIsRight() {
     int price = 22;
     int myguess;
-    std::cout << "GUESS THE PRICE: " << std::endl;
-    std::cin >> myguess;
-    if(myguess > price) {
-        std::cout << "The price is too high ";
-    } else if(price > myguess) {
-        std::cout << "The price is too low";
-    } else {
-        std::cout << "You got the exact price";
+
+
+    while(myguess != price) {
+        std::cout << "GUESS THE PRICE: " << std::endl;
+        std::cin >> myguess;
+        if(myguess > price) {
+            std::cout << "The price is too high ";
+        } else if(price > myguess) {
+            std::cout << "The price is too low" << std::endl;
+        } else {
+            std::cout << "You got the exact price" << std::endl;
+        }
     }
 
 
@@ -76,17 +80,26 @@ void cppThePriceIsRight() {
 
 void cppNoReturnFunction() {
     
-    std::cout << "Void datatype doesn't return value, only " << std::endl;
+    std::cout << "Void datatype doesn't return value, only do an action " << std::endl;
 }
 
 int cppSquareArea(int side) { // <-- data type defined in parameter no need to rewrite 
     int result = side * side;
+    std::cout << "Your square area is : " << result << std::endl;
     return result;
 }
 
-// bool cppIsEven(int number) {
-//     if(number )
-// }
+bool cppIsEven(int number) {
+    if(number % 2 == 0) {
+        std::cout << "Your number is Even" << std::endl;
+        return true;
+    } else {
+        std::cout << "your number is odd" << std::endl;
+        return false;
+    }
+}
+
+
 
 int main() {
 
@@ -99,6 +112,10 @@ int main() {
     // cppIfStatement();
 
     cppThePriceIsRight();
+
+    // cppIsEven(42);
+
+    // cppSquareArea(71);
 
     return 0;
 
