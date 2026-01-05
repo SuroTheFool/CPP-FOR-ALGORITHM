@@ -99,7 +99,20 @@ bool cppIsEven(int number) {
     }
 }
 
+void cppForPyramid() {
+    for(int i = 1; i <= 5; i++) {
+        for(int j = 1; j <= i; j++) {
+            std::cout << "*" << " ";
+        }
+        std::cout << std::endl;
+    }
+}
 
+void cppForCouting() { 
+    for (int i = 1; i <= 5; i++) {
+        std::cout << i << " ";
+    } 
+}
 
 int main() {
 
@@ -111,11 +124,15 @@ int main() {
 
     // cppIfStatement();
 
-    cppThePriceIsRight();
+    // cppThePriceIsRight();
 
     // cppIsEven(42);
 
     // cppSquareArea(71);
+
+    // cppForPyramid();
+
+    // cddForCount();
 
     return 0;
 
