@@ -108,7 +108,7 @@ void cppForPyramid() {
     }
 }
 
-void cppForCouting() { 
+void cppForCounting() { 
     for (int i = 1; i <= 5; i++) {
         std::cout << i << " ";
     } 
@@ -130,9 +130,9 @@ int main() {
 
     // cppSquareArea(71);
 
-    // cppForPyramid();
+    cppForPyramid();
 
-    // cddForCount();
+    cppForCounting();
 
     return 0;
 
